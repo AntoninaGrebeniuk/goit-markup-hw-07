@@ -1,0 +1,57 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/bg_image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 1600px;
+  max-height: 600px;
+  text-align: center;
+  background-color: $background-color;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.hero__btn {
+  padding: 10px 32px;
+  min-width: 216px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: $primary-white-color;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-radius: 4px;
+  border: transparent;
+
+  transition: background-color $duration $timing-function;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: $focus-btn-color;
+}

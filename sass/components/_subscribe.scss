@@ -1,0 +1,94 @@
+.subscribe {
+  position: relative;
+  display: inline-flex;
+
+  margin-right: 0;
+  margin-left: auto;
+  min-width: 570px;
+}
+
+.subscribe__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe__label {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+
+.subscribe__input {
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  min-width: 358px;
+  height: 50px;
+
+  color: $primary-white-color;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border $duration $timing-function;
+}
+
+.subscribe__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe__input:hover,
+.subscribe__input:focus {
+  outline: none;
+  border: 1px solid $accent-color;
+}
+
+.subscribe__btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color $duration $timing-function;
+}
+
+.subscribe__btn:hover,
+.subscribe__btn:focus {
+  background-color: $focus-btn-color;
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}

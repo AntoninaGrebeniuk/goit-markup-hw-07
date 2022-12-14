@@ -1,0 +1,13 @@
+.header {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1600px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
