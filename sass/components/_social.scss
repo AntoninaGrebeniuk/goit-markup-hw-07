@@ -32,10 +32,6 @@
   color: $primary-white-color;
 }
 
-.social__icon {
-  fill: currentColor;
-}
-
 .social__link--inverse {
   color: $primary-white-color;
   background: rgba(255, 255, 255, 0.1);
@@ -47,4 +43,8 @@
 .social__link--inverse:hover,
 .social__link--inverse:focus {
   background-color: $accent-color;
+}
+
+.social__icon {
+  fill: currentColor;
 }
