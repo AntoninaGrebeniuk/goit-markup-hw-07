@@ -22,10 +22,7 @@
   margin-right: auto;
   max-width: 696px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
   text-transform: uppercase;
 
   color: $primary-white-color;
@@ -34,21 +31,6 @@
 .hero__btn {
   padding: 10px 32px;
   min-width: 216px;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: $primary-white-color;
-  background: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border-radius: 4px;
-  border: transparent;
-
-  transition: background-color $duration $timing-function;
 }
 
 .hero__btn:hover,

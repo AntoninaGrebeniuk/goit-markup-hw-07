@@ -1,0 +1,36 @@
+.address__thumb {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.address__link {
+  font-style: normal;
+  @include font(null, $lh: 1.17);
+
+  color: $primary-white-color;
+}
+
+.address__link-cont {
+  font-style: normal;
+  @include font(null, $lh: 1.17);
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__item > .link {
+  transition: color $duration $timing-function;
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: $accent-color;
+}
+
+.address__link-cont:hover,
+.address__link-cont:focus {
+  color: $accent-color;
+}

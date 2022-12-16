@@ -44,9 +44,7 @@
   top: 8px;
   right: 8px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex();
 
   width: 30px;
   height: 30px;
@@ -71,11 +69,8 @@
 .modal__title {
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font($fs: 20px, $lh: 1.15);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: $primary-text-color;
 }
@@ -99,10 +94,7 @@
 .form__label {
   margin-bottom: 4px;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
+  @include font(null, $fs: 12px, $lh: 1.17, $ls: 0.01em);
   color: $secondary-text-color;
 }
 
@@ -153,10 +145,7 @@
 }
 
 .form__comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-
+  @include font(null, $fs: 12px, $lh: 1.17, $ls: 0.01em);
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -166,9 +155,7 @@
 }
 
 .form__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex();
   margin-bottom: 30px;
 }
 
@@ -204,11 +191,7 @@
 .form__check-text {
   display: inline-flex;
 
-  font-size: 14px;
-  line-height: 1.71;
-
-  letter-spacing: 0.03em;
-
+  @include font(null, $lh: 1.71);
   color: $secondary-text-color;
 }
 
@@ -216,9 +199,7 @@
   position: relative;
   display: inline-block;
   margin-left: 5px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(null, $lh: 1.71);
 
   color: $accent-color;
   transition: color $duration $timing-function;
@@ -241,29 +222,12 @@
 }
 
 .form__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex();
 
   min-width: 200px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-
-  letter-spacing: 0.06em;
-
-  color: $primary-white-color;
-  background-color: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: transparent;
-  cursor: pointer;
-
-  transition: background-color $duration $timing-function;
 }
 
 .form__btn:hover,

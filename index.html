@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -71,7 +71,7 @@
       </section>
 
       <!-- Особливості -->
-      <section class="section feature__section">
+      <section class="section section__nopadding">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
 
@@ -395,7 +395,7 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__thumb thumb">
+        <div class="address__thumb thumb">
           <a href="./index.html" class="logo footer__logo link"
             ><span class="accent">Web</span>Studio</a
           >
@@ -464,7 +464,7 @@
             <b class="subscribe__label">Підпишіться на розсилку</b>
             <input type="email" class="subscribe__input" name="email" placeholder="E-mail" />
           </label>
-          <button type="submit" class="subscribe__btn">
+          <button type="submit" class="subscribe__btn btn">
             Підписатися
             <svg width="24" height="24" class="subscribe__icon">
               <use href="./images/icons.svg#icon-send"></use>
@@ -487,7 +487,7 @@
         <form action="#" class="modal__form form" autocomplete="off">
           <label class="form__field">
             <span class="form__label">Ім'я</span>
-            <input type="text" class="form__input" name="text" />
+            <input type="text" class="form__input" name="text" required />
             <svg width="18" height="18" class="form__icon">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
@@ -495,7 +495,7 @@
 
           <label class="form__field">
             <span class="form__label">Телефон</span>
-            <input type="tel" class="form__input" name="tel" />
+            <input type="tel" class="form__input" name="tel" required />
             <svg width="18" height="18" class="form__icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -503,7 +503,7 @@
 
           <label class="form__field">
             <span class="form__label">Пошта</span>
-            <input type="email" class="form__input" name="mail" />
+            <input type="email" class="form__input" name="mail" required />
             <svg width="18" height="18" class="form__icon">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>

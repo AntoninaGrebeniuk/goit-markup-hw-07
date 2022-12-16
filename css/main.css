@@ -62,8 +62,8 @@ img {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -85,10 +85,25 @@ img {
   color: #ffffff;
 }
 
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .social {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .social__item {
@@ -102,8 +117,8 @@ img {
 
 .social__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   color: #afb1b8;
@@ -134,7 +149,6 @@ img {
 }
 
 .header {
-  display: inline;
   margin-left: auto;
   margin-right: auto;
   width: 1600px;
@@ -144,6 +158,7 @@ img {
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .site-nav {
@@ -188,7 +203,7 @@ img {
   position: absolute;
   content: "";
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   height: 4px;
   background: #2196f3;
@@ -197,15 +212,15 @@ img {
 
 .contact {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
 }
 
 .contact__item {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .contact__item:not(:last-child) {
@@ -214,8 +229,8 @@ img {
 
 .contact__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -272,18 +287,6 @@ img {
 .hero__btn {
   padding: 10px 32px;
   min-width: 216px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border-radius: 4px;
-  border: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__btn:hover,
@@ -291,7 +294,7 @@ img {
   background-color: #188ce8;
 }
 
-.feature__section {
+.section__nopadding {
   padding-bottom: 0;
 }
 
@@ -305,8 +308,8 @@ img {
 
 .feature__thumb {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -352,16 +355,16 @@ img {
   left: 0;
   bottom: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   min-height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -398,8 +401,8 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -407,15 +410,15 @@ img {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #757575;
 }
 
 .client {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .client__item {
@@ -429,8 +432,8 @@ img {
 
 .client__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   color: #afb1b8;
@@ -462,7 +465,7 @@ img {
   align-items: baseline;
 }
 
-.footer__thumb {
+.address__thumb {
   display: inline-block;
   margin-right: 70px;
 }
@@ -582,22 +585,10 @@ img {
   right: 0;
   bottom: 0;
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe__btn:hover,
@@ -620,6 +611,7 @@ img {
 .btn-set {
   margin-bottom: 50px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -628,8 +620,8 @@ img {
 }
 
 .btn-set__filter {
-  padding: 6px 22px;
   display: inline-block;
+  padding: 6px 22px;
   min-width: 73px;
   font-family: inherit;
   font-weight: 500;
@@ -638,9 +630,9 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #f5f4fa;
-  cursor: pointer;
-  border: none;
+  border: transparent;
   border-radius: 4px;
+  cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -775,8 +767,8 @@ img {
   top: 8px;
   right: 8px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   color: #000000;
@@ -801,8 +793,8 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -899,8 +891,8 @@ img {
 
 .form__check {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -966,23 +958,12 @@ img {
 
 .form__btn {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-width: 200px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: transparent;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__btn:hover,

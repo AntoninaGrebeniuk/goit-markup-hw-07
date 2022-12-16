@@ -1,4 +1,4 @@
-.feature__section {
+.section__nopadding {
   padding-bottom: 0;
 }
 
@@ -11,9 +11,7 @@
 }
 
 .feature__thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex();
   margin-bottom: 30px;
 
   width: 270px;
@@ -24,18 +22,14 @@
 .feature__title {
   margin-bottom: 10px;
 
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(null);
   text-transform: uppercase;
 
   color: $primary-text-color;
 }
 
 .feature__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(null, $lh: 1.71);
 
   color: $secondary-text-color;
 }

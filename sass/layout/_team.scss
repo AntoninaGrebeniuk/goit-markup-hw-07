@@ -30,21 +30,16 @@
 .team__subtitle {
   margin-bottom: 10px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font($fw: 500, $fs: 16px, $lh: 1.19);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: $primary-text-color;
 }
 
 .team__text {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font($fw: null, $fs: 16px, $lh: 1.19);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: $secondary-text-color;
 }
