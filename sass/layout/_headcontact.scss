@@ -1,14 +1,20 @@
 .contact {
   @include centeredFlex();
   margin-left: auto;
-}
 
-.contact__item {
-  @include centeredFlex();
-}
+  &__item {
+    @include centeredFlex();
+  }
 
-.contact__item:not(:last-child) {
-  margin-right: 50px;
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__mail-icon,
+  &__phone-icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
 .contact__link {
@@ -19,19 +25,9 @@
   @include font($fw: 500, $ls: 0.02em);
   color: $secondary-text-color;
   transition: color $duration $timing-function;
-}
 
-.contact__link:hover,
-.contact__link:focus {
-  color: $accent-color;
-}
-
-.contact__mail-icon,
-.contact__phone-icon {
-  margin-right: 10px;
-}
-
-.contact__mail-icon,
-.contact__phone-icon {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

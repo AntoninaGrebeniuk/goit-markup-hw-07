@@ -13,27 +13,27 @@
   max-height: 600px;
   text-align: center;
   background-color: $background-color;
-}
 
-.hero__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 696px;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
 
-  @include font($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
-  text-transform: uppercase;
+    @include font($fw: 900, $fs: 44px, $lh: 1.36, $ls: 0.06em);
+    text-transform: uppercase;
 
-  color: $primary-white-color;
+    color: $primary-white-color;
+  }
 }
 
 .hero__btn {
   padding: 10px 32px;
   min-width: 216px;
-}
 
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: $focus-btn-color;
+  &:hover,
+  &:focus {
+    background-color: $focus-btn-color;
+  }
 }

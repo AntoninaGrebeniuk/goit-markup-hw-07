@@ -4,32 +4,32 @@
 
 .feature {
   display: flex;
-}
 
-.feature__item:not(:last-child) {
-  margin-right: 30px;
-}
+  &__thumb {
+    @include centeredFlex();
+    margin-bottom: 30px;
 
-.feature__thumb {
-  @include centeredFlex();
-  margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: $light-background-color;
+  }
 
-  width: 270px;
-  height: 120px;
-  background-color: $light-background-color;
-}
+  &__title {
+    margin-bottom: 10px;
 
-.feature__title {
-  margin-bottom: 10px;
+    @include font(null);
+    text-transform: uppercase;
 
-  @include font(null);
-  text-transform: uppercase;
+    color: $primary-text-color;
+  }
 
-  color: $primary-text-color;
-}
+  &__text {
+    @include font(null, $lh: 1.71);
 
-.feature__text {
-  @include font(null, $lh: 1.71);
+    color: $secondary-text-color;
+  }
 
-  color: $secondary-text-color;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }

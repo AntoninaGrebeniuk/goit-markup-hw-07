@@ -1,14 +1,18 @@
 .social {
   @include centeredFlex();
+
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 .social__item {
   width: 44px;
   height: 44px;
-}
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social__link {
@@ -20,12 +24,12 @@
   border-radius: 50%;
 
   transition: background-color $duration $timing-function, color $duration $timing-function;
-}
 
-.social__link:hover,
-.social__link:focus {
-  background-color: $accent-color;
-  color: $primary-white-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
 }
 
 .social__link--inverse {
@@ -34,13 +38,9 @@
   border-radius: 50%;
 
   transition: background-color $duration $timing-function;
-}
 
-.social__link--inverse:hover,
-.social__link--inverse:focus {
-  background-color: $accent-color;
-}
-
-.social__icon {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }

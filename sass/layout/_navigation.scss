@@ -1,17 +1,17 @@
 .site-nav {
   margin-left: 93px;
-}
 
-.site-nav__list {
-  display: flex;
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  &__list {
+    display: flex;
+  }
 }
 
 .site-nav__item {
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
@@ -25,15 +25,15 @@
 
   color: $primary-text-color;
   transition: color $duration $timing-function;
-}
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: $accent-color;
-}
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 
-.site-nav__link.current {
-  color: $accent-color;
+  &.current {
+    color: $accent-color;
+  }
 }
 
 .link.current::after {

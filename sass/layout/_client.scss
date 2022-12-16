@@ -1,14 +1,18 @@
 .client {
   @include centeredFlex();
-}
 
-.client__item {
-  width: 170px;
-  height: 92px;
-}
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
 
-.client__item:not(:last-child) {
-  margin-right: $card-gap;
+  &__item:not(:last-child) {
+    margin-right: $card-gap;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
 }
 
 .client__link {
@@ -21,14 +25,10 @@
   border-radius: 4px;
 
   transition: color $duration $timing-function, border $duration $timing-function;
-}
 
-.client__link:hover,
-.client__link:focus {
-  color: $accent-color;
-  border: 1px solid $accent-color;
-}
-
-.client__icon {
-  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
 }

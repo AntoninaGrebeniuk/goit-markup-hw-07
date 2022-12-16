@@ -4,8 +4,8 @@
 
   width: 1600px;
   border-bottom: 1px solid #ececec;
-}
 
-.header__container {
-  @include centeredFlex();
+  &__container {
+    @include centeredFlex();
+  }
 }

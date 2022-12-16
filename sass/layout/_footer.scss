@@ -5,9 +5,9 @@
   margin-right: auto;
 
   background-color: $background-color;
-}
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
 }
