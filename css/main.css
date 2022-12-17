@@ -186,8 +186,7 @@ img {
 .site-nav__link.current {
   color: #2196f3;
 }
-
-.link.current::after {
+.site-nav__link.current::after {
   position: absolute;
   content: "";
   left: 0;
